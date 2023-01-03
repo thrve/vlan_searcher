@@ -13,6 +13,8 @@ import os
 username = os.getenv('LOGIN')
 password = os.getenv('PASSWORD')
 
+vlan_re = re.compile(r'(?:[1-9]\d{,2}|[1-3]\d{3}|40(?:[0-8]\d|9[0-4]))$')
+
 
 
 parser = argparse.ArgumentParser(description='vlansearcher')
@@ -87,7 +89,6 @@ if __name__ == '__main__':
     
     def stfn_input(start, finish):
 
-        vlan_re = re.compile(r'(?:[1-9]\d{,2}|[1-3]\d{3}|40(?:[0-8]\d|9[0-4]))$')
         while True:
             start = input('start number: ')
             finish = input('finish number: ')
