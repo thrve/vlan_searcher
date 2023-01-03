@@ -5,7 +5,7 @@ git clone https://github.com/thrve/vlan_searcher.git && mv vlan_searcher/vlan_se
 in ~/.*rc:
 alias vlans='LOGIN=tacacs_login PASSWORD=tacacs_password vlan_searcher'
 
- (py) • ॐ  git ➛ vlans 10.205.18.250 -s 200 -f 20
+(py) • ॐ  git ➛ vlans 10.205.18.250 -s 200 -f 20
 
 The beginning of the range is larger than its end.
 Swap values? y/n: j
